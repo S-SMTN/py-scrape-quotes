@@ -16,7 +16,7 @@ class Quote:
     author: str
     tags: list[str]
 
-    def dict(self):
+    def dict(self) -> dict:
         return {k: str(v) for k, v in asdict(self).items()}
 
 
